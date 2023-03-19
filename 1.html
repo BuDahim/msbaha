@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+  <title>استغفار</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta charset="UTF-8"/>
+
+  <link rel="stylesheet" href="style.css"> 
+
+</head>
+
+<body>
+   <center>
+    <br>
+    <br>
+    <dl>
+      <h2 style=font-size:18px;margin:10px;color:#d5ac00>وَمَا كَانَ ٱللَّهُ لِيُعَذِّبَهُمْ وَأَنتَ فِيهِمْ ۚ وَمَا كَانَ ٱللَّهُ
+        مُعَذِّبَهُمْ وَهُمْ يَسْتَغْفِرُونَ</h2>
+    </dl>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <fieldset style=width:10px;>
+
+      <h3 
+        style="Font-size:40px;
+               color:#ddce92;">
+        <span
+         id="thisone">0</span>
+    </h3>
+    <br>
+
+        <button class="custom-btn2 btn-2" id="justdoit" onclick="addone()">أستغفرالله</button>
+
+      <script type="text/javascript">
+
+
+        var loc = window.location.href+'';
+        if (loc.indexOf('http://')==0){
+          window.location.href = loc.replace('http://','https://');
+        }
+
+        function doit() {
+
+          document.getElementById("thisone").innerHTML = "you";
+        }
+        
+        function addone() {
+          var foo = document.getElementById('thisone').innerHTML;
+          foo++;
+          document.getElementById('thisone').innerHTML = foo;
+        }
+
+        function rest() {
+          var fooR = document.getElementById('thisone').innerHTML;
+          fooR =0;
+          document.getElementById('thisone').innerHTML = fooR;
+        }
+      </script>
+
+
+    </fieldset>
+
+    <br>
+    
+    <input 
+      type="image" 
+      onclick="rest()" 
+      src= 'reset.png'  width="35" height="35">
+
+  <br>
+  <br>
+  <br>
+  <br>
+  
+  <!-- ShareThis BEGIN -->
+  <script type='text/javascript'
+    src='https://platform-api.sharethis.com/js/sharethis.js#property=6408cf91a0932a001aed0de3&product=inline-share-buttons'
+    async='async'>
+  </script>
+  <div class="sharethis-inline-share-buttons"></div>
+  <!-- ShareThis END -->
+
+  </center>
+
+</body>
+
+
+</html>
